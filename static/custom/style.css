@@ -74,47 +74,6 @@ button:focus {
     border-top: 1px solid #fff !important;
 }
 
-.nav-close {
-    display: none;
-}
-
-
-/* ------------------------- SideNav for Extra Small View ------------------------- */
-
-@media (max-width: 576px) {
-    .sidenav {
-        height: 100vh;
-        /* width: 15rem; */
-        width: 250px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #009688;
-        overflow-x: hidden;
-        transition: all .5s ease;
-        padding: 1rem;
-    }
-    .navbar hr {
-        display: none;
-    }
-    .nav-close {
-        display: block;
-        text-align: right;
-        margin-bottom: .5rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #fff;
-    }
-    .nav-close .nav-link {
-        display: inline;
-        padding: .5rem 1rem !important;
-        font-size: 1rem;
-    }
-    .sidenav .fa {
-        font-size: 1.5rem;
-    }
-}
-
 
 /* ------------------------- Slider ------------------------- */
 
@@ -241,6 +200,10 @@ button:focus {
     padding: 3.25rem 0 3.5rem;
 }
 
+.popular .card:hover {
+    transform: scale(1.025);
+}
+
 .popular .section-title {
     font-size: 2.28rem;
     font-weight: 400;
@@ -276,8 +239,25 @@ button:focus {
 
 .follow {
     background-color: #009688;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.follow .section-title {
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.52rem 0 .912rem 0;
+    font-weight: 400;
+}
+
+.follow .row {
+    margin-bottom: 20px;
 }
 
 .follow i {
     color: #fff;
+}
+
+.follow .fa-4x {
+    margin: 5px 10px;
 }
