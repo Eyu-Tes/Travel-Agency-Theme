@@ -131,21 +131,23 @@ button:focus {
 }
 
 
-/* ------------------------- Icon Box & Popular ------------------------- */
+/* ------------------------- Icon Box, Popular & Gallery ------------------------- */
 
 
 /* The media for the medium must be placed 1st otherwise, it is going to override the media of the large */
 
 @media (min-width: 768px) {
     .icon-box .container,
-    .popular .container {
+    .popular .container,
+    .gallery .container {
         width: 85%;
     }
 }
 
 @media (min-width: 992px) {
     .icon-box .container,
-    .popular .container {
+    .popular .container,
+    .gallery .container {
         width: 70%;
     }
 }
@@ -166,6 +168,27 @@ button:focus {
     border-radius: 0;
     margin-bottom: 1.25rem;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* ------------------------- Popular & Gallery ------------------------- */
+
+.popular,
+.gallery {
+    padding: 3.25rem 0 1.75rem;
+}
+
+.popular .section-title,
+.gallery .section-title {
+    font-size: 2.28rem;
+    font-weight: 400;
+    line-height: 110%;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.popular .section-title span,
+.gallery .section-title span {
+    color: teal;
 }
 
 
@@ -196,23 +219,8 @@ button:focus {
 
 /* ------------------------- Popular ------------------------- */
 
-.popular {
-    padding: 3.25rem 0 1.75rem;
-}
-
 .popular .card:hover {
     transform: scale(1.025);
-}
-
-.popular .section-title {
-    font-size: 2.28rem;
-    font-weight: 400;
-    line-height: 110%;
-    margin: 1.5rem 0 2rem 0;
-}
-
-.popular .section-title span {
-    color: teal;
 }
 
 .popular .img-container {
@@ -261,3 +269,53 @@ button:focus {
 .follow .fa-4x {
     margin: 5px 10px;
 }
+
+
+/* ------------------------- Gallery ------------------------- */
+
+.gallery .row>div {
+    /* reduce the spaces b|n the columns */
+    padding: .65rem;
+}
+
+.gallery img {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    /* Hidden by default */
+    display: none;
+    position: fixed;
+    /* Sit on top, z-index of the fixed navbar: 1030; */
+    z-index: 1031;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 85%;
+    max-width: 768px;
+    border: none;
+}
+
+.modal-content:hover {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+}
+
+
+/* ------------------------- Contact ------------------------- */
